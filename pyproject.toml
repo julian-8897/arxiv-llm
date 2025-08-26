@@ -12,7 +12,7 @@ description = "An AI-powered semantic search tool for arXiv papers"
 readme = "README.md"
 authors = [{ name = "Julian Chan", email = "julianchan8897@gmail.com" }]
 license = { text = "MIT" }
-requires-python = ">=3.9, !=3.9.7"
+requires-python = ">=3.9,!=3.9.7"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
@@ -47,16 +47,3 @@ dev = [
 Homepage = "https://github.com/julian-8897/arxiv-llm"
 Repository = "https://github.com/julian-8897/arxiv-llm.git"
 Issues = "https://github.com/julian-8897/arxiv-llm/issues"
-
-[project.scripts]
-arxiv-search = "scripts.run_arxiv_search:main"
-
-[tool.setuptools.packages.find]
-where = ["src"]
-
-[tool.setuptools.package-data]
-"*" = ["*.txt", "*.md"]
-
-[tool.ruff.lint]
-fixable = ["ALL"]
-unfixable = ["F401"]
