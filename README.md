@@ -25,7 +25,7 @@ git clone https://github.com/julian-8897/arxiv-llm.git
 cd arxiv-llm
 
 # Install dependencies
-pip install -r requirements.txt
+pip install -e
 
 # Run the app
 streamlit run app.py
@@ -58,7 +58,7 @@ streamlit run app.py
 ```text
 arxiv-llm/
 ├── app.py                 # Streamlit web interface
-├── requirements.txt       # Dependencies
+├── pyproject.toml         # Project configuration and dependencies
 ├── scripts/
 │   └── run_arxiv_search.py # CLI example
 └── src/
