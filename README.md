@@ -2,6 +2,8 @@
 
 An AI-powered semantic search tool for arXiv papers using sentence transformers and vector similarity search.
 
+**[Try the Live Demo](https://arxiv-llm.streamlit.app/)**
+
 ## Features
 
 - Search papers by meaning, not just keywords
@@ -11,27 +13,22 @@ An AI-powered semantic search tool for arXiv papers using sentence transformers 
 
 ## Quick Start
 
-### Installation
+### Try Online
+
+Visit the live demo: **https://arxiv-llm.streamlit.app/**
+
+### Run Locally
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/arxiv-llm.git
+git clone https://github.com/julian-8897/arxiv-llm.git
 cd arxiv-llm
 
 # Install dependencies
-pip install -e .
-```
+pip install -r requirements.txt
 
-### Run the Web App
-
-```bash
+# Run the app
 streamlit run app.py
-```
-
-### Command Line Usage
-
-```bash
-python scripts/run_arxiv_search.py
 ```
 
 ## How It Works
@@ -61,7 +58,7 @@ python scripts/run_arxiv_search.py
 ```text
 arxiv-llm/
 ├── app.py                 # Streamlit web interface
-├── pyproject.toml         # Project configuration
+├── requirements.txt       # Dependencies
 ├── scripts/
 │   └── run_arxiv_search.py # CLI example
 └── src/
