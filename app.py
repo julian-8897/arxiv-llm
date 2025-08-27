@@ -224,7 +224,7 @@ def search_ui():
                 st.write(f"**Authors:** {', '.join(p['authors'][:3])}")
                 st.write(f"**Published:** {p['published'].strftime('%Y-%m-%d')}")
                 st.write(f"**Category:** {p.get('primary_category', cat)}")
-                st.write(f"**Abstract:** {p['summary'][:400]}...")
+                st.write(f"**Abstract:** {p['summary'][:500]}...")
                 st.write(f"**ArXiv ID:** {p['id']}")
                 c1, c2 = st.columns(2)
                 with c1:
