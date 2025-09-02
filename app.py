@@ -219,12 +219,12 @@ def search_ui():
                 else ("🌌" if str(cat).startswith("astro") else "📄")
             )
             with st.expander(
-                f"{emoji} {i}. {p['title'][:70]}... (Score: {s:.3f}) [{cat}]"
+                f"{emoji} {i}. {p['title']}... (Similarity score: {s:.3f}) [{cat}]"
             ):
                 st.write(f"**Authors:** {', '.join(p['authors'][:3])}")
                 st.write(f"**Published:** {p['published'].strftime('%Y-%m-%d')}")
                 st.write(f"**Category:** {p.get('primary_category', cat)}")
-                st.write(f"**Abstract:** {p['summary'][:500]}...")
+                st.write(f"**Abstract:** {p['summary']}...")
                 st.write(f"**ArXiv ID:** {p['id']}")
                 c1, c2 = st.columns(2)
                 with c1:
