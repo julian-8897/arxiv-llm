@@ -28,6 +28,6 @@ class TextEmbedder:
                 for paper in papers
             ]
         else:
-            raise ValueError("Field must be 'title', 'summary', or 'title_summary'")
+            raise ValueError("field must be 'title', 'summary', or 'title_summary'")
 
         return self.encode_texts(texts)
