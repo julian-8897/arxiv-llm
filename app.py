@@ -243,7 +243,9 @@ def main():
     # Config + loader
     c1, c2 = st.columns(2)
     with c1:
-        max_ppc = st.selectbox("Papers per category", [25, 50, 100, 150, 200], index=1)
+        max_ppc = st.selectbox(
+            "Papers per category", [100, 200, 300, 400, 500], index=1
+        )
     with c2:
         if cats:
             st.metric("Estimated total", f"~{len(cats) * max_ppc}")
