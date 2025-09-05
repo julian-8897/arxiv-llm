@@ -17,6 +17,7 @@ class ArxivClient:
     """
 
     def __init__(self):
+        """Initializes the arXiv API client."""
         self.client = arxiv.Client()
 
     def search_papers(
